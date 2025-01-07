@@ -19,7 +19,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/register', formData)
+    axios.post('mongodb+srv://purvagorde2004:Purva%4004@fundraser.95rh3.mongodb.net/register', formData)
     .then(result =>{console.log(result)
       navigate('/login')
     })

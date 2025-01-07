@@ -14,7 +14,7 @@ const navigate =useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/login', formData)
+    axios.post('mongodb+srv://purvagorde2004:Purva%4004@fundraser.95rh3.mongodb.net/login', formData)
     .then(result =>{console.log(result)
       if(result.data ==="success"){ 
       navigate('/home')}
