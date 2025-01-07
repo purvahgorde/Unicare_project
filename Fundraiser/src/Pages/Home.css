@@ -33,6 +33,9 @@ text-decoration: none;
 color: #CFD6C4;
 }
 
+#pk{
+  color: #303f18;
+}
 .donate-btn2:hover {
   color: white;
   background-color: #657166;

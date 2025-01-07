@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios'
+import mongoose from 'mongoose';
 import { useNavigate } from 'react-router-dom';
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,8 @@ const navigate =useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('mongodb+srv://purvagorde2004:Purva%4004@fundraser.95rh3.mongodb.net/login', formData)
+    axios.post('http://localhost:3001/login', formData)
+    
     .then(result =>{console.log(result)
       if(result.data ==="success"){ 
       navigate('/home')}

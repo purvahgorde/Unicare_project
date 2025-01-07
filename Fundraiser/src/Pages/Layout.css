@@ -22,6 +22,10 @@
   transition: transform 0.5s ease;
   
 }
+.navbar{
+  position:sticky;
+  top:0;
+}
 
 .navbar-toggler {
   border-color: #657166;

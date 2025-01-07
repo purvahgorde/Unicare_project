@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // For navigation between forms
 import axios from "axios"
+import mongoose from 'mongoose';
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     fullname: '',
@@ -19,7 +20,8 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('mongodb+srv://purvagorde2004:Purva%4004@fundraser.95rh3.mongodb.net/register', formData)
+     axios.post('http://localhost:3001/register', formData)
+    
     .then(result =>{console.log(result)
       navigate('/login')
     })

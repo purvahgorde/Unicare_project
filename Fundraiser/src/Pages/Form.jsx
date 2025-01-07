@@ -33,7 +33,7 @@ const Form = () => {
 
    const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('mongodb+srv://purvagorde2004:Purva%4004@fundraser.95rh3.mongodb.net/form', formData)
+    axios.post('http://localhost:3001/form', formData)
     .then(result =>{console.log(result)
       navigate('/donate.html')
     })

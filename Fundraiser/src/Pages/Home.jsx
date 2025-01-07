@@ -56,18 +56,13 @@ function Home() {
                   <h1 className="display-4">Make a Difference with Us</h1>
                   <p className="lead">"Together, we can create stories of hope and impact."</p>
                   <hr className="my-4 bg-dark"/>
-                  <p>Support our cause and help us bring positive change to those in need.</p>
+                  <p id="pk">Support our cause and help us bring positive change to those in need.</p>
                   <p className="lead">
                       <a className="btn2 btn2-outline-dark btn2-md donate-btn2" href="donate.html" role="button">Donate Now</a>
                   </p>
               </div>
               <div className="col-md-6">
-                  <div className="video-container">
-                      <video className="fundraiser-video" autoplay muted loop playsinline>
-                          <source src="Images/main_vid.mp4" type="video/mp4"/>
-                          Your browser does not support the video tag.
-                      </video>
-                  </div>
+              <img src="Images/Head.jpg" alt="Main Image" className="fundraiser-img" />
               </div>
           </div>
       </div>
